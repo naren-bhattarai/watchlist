@@ -10,7 +10,7 @@
   <script>
       let symbols = ['SNDL', 'SQNS', 'WATT'];
       let urls =[]
-      symbols.each(i=>{
+      symbols.forEach(i=>{
         urls.push(`https://finviz.com/chart.ashx?t=${i}&ty=c&ta=1&p=d&s=l`)        
       })
       console.log(urls)
