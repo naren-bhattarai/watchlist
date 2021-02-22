@@ -11,7 +11,8 @@
       let symbols = ['SNDL', 'SQNS', 'WATT'];
       let urls =[]
       symbols.forEach(i=>{
-        urls.push(`https://finviz.com/chart.ashx?t=${i}&ty=c&ta=1&p=d&s=l`)        
+        let url=`https://finviz.com/chart.ashx?t=${i}&ty=c&ta=1&p=d&s=l`;
+        $('#charts').append(`<img src="${url}" class="img-fluid" alt="Responsive image">`)        
       })
       console.log(urls)
   </script>
@@ -19,8 +20,8 @@
 <body>
 
 <div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
+  <h1>Naren's Watchlist</h1>
+  <div id="charts"></div>
 </div>
 
 </body>
